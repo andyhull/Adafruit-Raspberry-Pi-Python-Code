@@ -8,8 +8,8 @@ from Adafruit_8x8 import ColorEightByEight
 
 DEBUG = 1
 
-USERNAME = os.environ["ENAME"]  # just the part before the @ sign, add yours here
-PASSWORD = os.environ["EPASS"]     
+USERNAME = os.system("echo $ENAME")  # just the part before the @ sign, add yours here
+PASSWORD = os.system("echo $EPASS")     
 
 NEWMAIL_OFFSET = 0        # my unread messages never goes to zero, yours might
 MAIL_CHECK_FREQ = 30      # check mail every 60 seconds
