@@ -47,6 +47,10 @@ class EightByEight:
     "Clears the entire display"
     self.disp.clear()
 
+  def setBrightness(self, brightness):
+    "Sets the brightness level from 0..15"
+    self.disp.setBrightness(brightness)
+
 class ColorEightByEight(EightByEight):
   def setPixel(self, x, y, color=1):
     "Sets a single pixel"

@@ -17,12 +17,18 @@ iter = 0
 for x in range(1, 4):
   for y in range(1, 4):
     grid.setPixel(x, y)
-    # time.sleep(0.5)
-# Continually update the 8x8 display one pixel at a time
-# while(True):
-#   iter += 1
 
-#   for x in range(0, 8):
-#     for y in range(0, 8):
-#       grid.setPixel(x, y, iter % 4 )
-#       time.sleep(0.02)
+# Write a smiley face
+for i in range(0,8):
+  grid.writeRowRaw(i, smile_bmp[i]) 
+time.sleep(.33)
+
+# Write a neutral face
+for i in range(0,8):
+  grid.writeRowRaw(i, neutral_bmp[i]) 
+time.sleep(.33)
+  
+# Write a frown face
+for i in range(0,8):
+  grid.writeRowRaw(i, frown_bmp[i]) 
+time.sleep(.33)
