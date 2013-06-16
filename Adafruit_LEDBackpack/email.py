@@ -34,7 +34,7 @@ grid.setBrightness(15)
 
 while True:
 
-        newmails = int(feedparser.parse("https://" + USERNAME + ":" + PASSWORD +"@mail.google.com/gmail/feed/atom")["feed"]["fullcount"])
+        newmails = int(feedparser.parse("https://" + os.system("echo $ENAME") + ":" + os.system("echo $EPASS") +"@mail.google.com/gmail/feed/atom")["feed"]["fullcount"])
 
         if DEBUG:
                 print "You have", newmails, "new emails!"
