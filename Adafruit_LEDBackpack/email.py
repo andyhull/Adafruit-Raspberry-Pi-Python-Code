@@ -50,7 +50,6 @@ while True:
                 time.sleep(1)
 
         time.sleep(MAIL_CHECK_FREQ)
-!
 
 
 
