@@ -7,11 +7,9 @@ import datetime
 from Adafruit_8x8 import ColorEightByEight
 
 DEBUG = 1
-username = "ENAME" in os.environ
-pswd = "EPASS" in os.environ
 
-USERNAME = username  # just the part before the @ sign, add yours here
-PASSWORD = pswd     
+USERNAME = os.environ["ENAME"]  # just the part before the @ sign, add yours here
+PASSWORD = os.environ["EPASS"]     
 
 NEWMAIL_OFFSET = 0        # my unread messages never goes to zero, yours might
 MAIL_CHECK_FREQ = 30      # check mail every 60 seconds
