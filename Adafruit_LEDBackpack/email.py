@@ -8,8 +8,8 @@ from Adafruit_8x8 import ColorEightByEight
 
 DEBUG = 1
 
-USERNAME = os.system("echo $ENAME")  # just the part before the @ sign, add yours here
-PASSWORD = os.system("echo $EPASS")     
+USERNAME = '"'+os.system("echo $ENAME")+'"'  # just the part before the @ sign, add yours here
+PASSWORD = '"'+os.system("echo $EPASS")+'"'   
 
 NEWMAIL_OFFSET = 0        # my unread messages never goes to zero, yours might
 MAIL_CHECK_FREQ = 30      # check mail every 60 seconds
@@ -34,7 +34,7 @@ grid.setBrightness(15)
 
 while True:
 
-        newmails = int(feedparser.parse("https://" + os.system("echo $ENAME") + ":" + os.system("echo $EPASS") +"@mail.google.com/gmail/feed/atom")["feed"]["fullcount"])
+        newmails = int(feedparser.parse("https://" + USERNAME + ":" + PASSWORD +"@mail.google.com/gmail/feed/atom")["feed"]["fullcount"])
 
         if DEBUG:
                 print "You have", newmails, "new emails!"
