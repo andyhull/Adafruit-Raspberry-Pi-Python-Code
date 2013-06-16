@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import os
 
-import RPi.GPIO as GPIO, feedparser, time
+import time
 
 import datetime
 from Adafruit_8x8 import ColorEightByEight
