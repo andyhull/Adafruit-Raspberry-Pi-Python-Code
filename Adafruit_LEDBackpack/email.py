@@ -11,7 +11,7 @@ USERNAME = "andy@codeforamerica.org"     # just the part before the @ sign, add 
 PASSWORD = "battles'2"     
 
 NEWMAIL_OFFSET = 0        # my unread messages never goes to zero, yours might
-MAIL_CHECK_FREQ = 60      # check mail every 60 seconds
+MAIL_CHECK_FREQ = 30      # check mail every 60 seconds
 
 # GPIO.setmode(GPIO.BCM)
 # GREEN_LED = 18
