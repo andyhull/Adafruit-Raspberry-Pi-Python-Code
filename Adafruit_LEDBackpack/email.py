@@ -7,8 +7,8 @@ import datetime
 from Adafruit_8x8 import ColorEightByEight
 
 DEBUG = 1
-os.system("echo $ENAME")
-os.system("echo $EPASS")
+os.system("export ENAME")
+os.system("export EPASS")
 USERNAME = os.environ["ENAME"]  # just the part before the @ sign, add yours here
 PASSWORD = os.environ["EPASS"] 
 
