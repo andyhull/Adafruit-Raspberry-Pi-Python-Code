@@ -15,15 +15,6 @@ smile_bmp = [0b00011110,0b00100001,0b11010010,0b11000000,0b11010010,0b11001100,0
 neutral_bmp = [0b00011110,0b00100001,0b11010010,0b11000000,0b11011110,0b11000000,0b00100001,0b00011110]
 frown_bmp = [0b00011110,0b00100001,0b11010010,0b11000000,0b11001100,0b11010010,0b00100001,0b00011110]
 
-# Loop through brightness settings
-for i in range(0,15):
-  grid.setBrightness(i)
-  time.sleep(.1)
-    
-for i in range(0,15):
-  grid.setBrightness(15-i)
-  time.sleep(.1)
-
 for x in range(1, 4):
   for y in range(1, 4):
     grid.setPixel(x, y)
@@ -42,3 +33,12 @@ time.sleep(.33)
 for i in range(0,8):
   grid.writeRowRaw(i, frown_bmp[i]) 
 time.sleep(.33)
+
+# Loop through brightness settings
+for i in range(0,15):
+  grid.setBrightness(i)
+  time.sleep(.1)
+    
+for i in range(0,15):
+  grid.setBrightness(15-i)
+  time.sleep(.1)
