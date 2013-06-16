@@ -15,15 +15,15 @@ smile_bmp = [0b00011110,0b00100001,0b11010010,0b11000000,0b11010010,0b11001100,0
 neutral_bmp = [0b00011110,0b00100001,0b11010010,0b11000000,0b11011110,0b11000000,0b00100001,0b00011110]
 frown_bmp = [0b00011110,0b00100001,0b11010010,0b11000000,0b11001100,0b11010010,0b00100001,0b00011110]
 
-grid.setBrightness(i)
+grid.setBrightness(15)
 
 for x in range(1, 4):
   for y in range(1, 4):
     grid.setPixel(x, y)
 
-# Write a smiley face
+# Write a frown face
 for i in range(0,8):
-  grid.writeRowRaw(i, smile_bmp[i]) 
+  grid.writeRowRaw(i, frown_bmp[i]) 
 time.sleep(.33)
 
 # Write a neutral face
@@ -31,7 +31,7 @@ for i in range(0,8):
   grid.writeRowRaw(i, neutral_bmp[i]) 
 time.sleep(.33)
   
-# Write a frown face
+# Write a smiley face
 for i in range(0,8):
-  grid.writeRowRaw(i, frown_bmp[i]) 
+  grid.writeRowRaw(i, smile_bmp[i]) 
 time.sleep(.33)
