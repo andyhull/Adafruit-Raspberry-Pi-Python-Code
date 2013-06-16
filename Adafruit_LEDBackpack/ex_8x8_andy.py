@@ -16,8 +16,8 @@ iter = 0
 # time.sleep(0.5)
 for x in range(1, 4):
   for y in range(1, 4):
-    grid.setPixel(x, y, iter % 4 )
-    time.sleep(0.5)
+    grid.setPixel(x, y)
+    # time.sleep(0.5)
 # Continually update the 8x8 display one pixel at a time
 # while(True):
 #   iter += 1
