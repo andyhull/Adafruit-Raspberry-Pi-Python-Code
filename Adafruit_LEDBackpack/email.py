@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import os
 
-import time
+import feedparser, time
 
 import datetime
 from Adafruit_8x8 import ColorEightByEight
