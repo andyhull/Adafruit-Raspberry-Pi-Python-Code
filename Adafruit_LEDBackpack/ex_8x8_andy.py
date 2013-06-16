@@ -24,14 +24,14 @@ for x in range(1, 4):
 # Write a frown face
 for i in range(0,8):
   grid.writeRowRaw(i, frown_bmp[i]) 
-time.sleep(.5)
+time.sleep(1)
 
 # Write a neutral face
 for i in range(0,8):
   grid.writeRowRaw(i, neutral_bmp[i]) 
-time.sleep(.5)
+time.sleep(1)
   
 # Write a smiley face
 for i in range(0,8):
   grid.writeRowRaw(i, smile_bmp[i]) 
-time.sleep(.5)
+time.sleep(1)
